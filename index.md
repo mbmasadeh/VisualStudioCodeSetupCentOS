@@ -12,12 +12,12 @@ Create the following repo file to enable the Visual Studio Code repository
 
 Drop the following lines into the new file
 
-[code]
-name=Visual Studio Code
-baseurl=https://packages.microsoft.com/yumrepos/vscode
-enabled=1
-gpgcheck=1
-gpgkey=https://packages.microsoft.com/keys/microsoft.asc
+<p>[code]</p>
+<p>name=Visual Studio Code</p>
+<p>baseurl=https://packages.microsoft.com/yumrepos/vscode</p>
+<p>enabled=1</p>
+<p>gpgcheck=1</p>
+<p>gpgkey=https://packages.microsoft.com/keys/microsoft.asc</p>
 
 Save and exit the file
 
