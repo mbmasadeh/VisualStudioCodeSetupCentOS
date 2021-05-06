@@ -2,7 +2,7 @@
 
 The standared installation steps for visual studio code is going well with CentOS 8 and any above releases. However, when you try to do the same steps with CentOS 7, the installation steps will done successfully but the system wont be run. 
 
-##First lets do some VS configurations:
+## First lets do some VS configurations:
 
 Importing the Microsoft GPG key
 <pre><code>$ sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc</code></pre>
@@ -21,7 +21,7 @@ gpgkey=https://packages.microsoft.com/keys/microsoft.asc
 
 Save and exit the file
 
-##Second Install VS Code
+## Second Install VS Code
 Its required to select a specific version of visual studio code thats compatible with CntOS 7 
 <pre><code>$ sudo yum install code-1.52.1-1608137084.el7.x86_64 </code></pre>
 
@@ -31,6 +31,6 @@ $ sudo yum install yum-plugin-versionlock
 $ sudo yum versionlock code
 </code></pre>
 
-Thats it ...!
+<p>Thats it ...!</p>
 to run tyhe visual studio code, open a new terminal and hit down this command
-<pre><code>$ code </pre></code>
+<pre><code>$ code </code></pre>
