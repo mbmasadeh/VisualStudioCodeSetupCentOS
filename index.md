@@ -11,14 +11,14 @@ Create the following repo file to enable the Visual Studio Code repository
 <pre><code>$ sudo nano /etc/yum.repos.d/vscode.repo</code></pre>
 
 Drop the following lines into the new file
-
+<pre><code>
 <p>[code]</p>
 <p>name=Visual Studio Code</p>
 <p>baseurl=https://packages.microsoft.com/yumrepos/vscode</p>
 <p>enabled=1</p>
 <p>gpgcheck=1</p>
 <p>gpgkey=https://packages.microsoft.com/keys/microsoft.asc</p>
-
+</code></pre>
 Save and exit the file
 
 ### Second Install VS Code
