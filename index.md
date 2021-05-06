@@ -14,10 +14,10 @@ Drop the following lines into the new file
 <pre><code>
 [code]
 name=Visual Studio Code
-<p>baseurl=https://packages.microsoft.com/yumrepos/vscode</p>
-<p>enabled=1</p>
-<p>gpgcheck=1</p>
-<p>gpgkey=https://packages.microsoft.com/keys/microsoft.asc</p>
+baseurl=https://packages.microsoft.com/yumrepos/vscode
+enabled=1
+gpgcheck=1
+gpgkey=https://packages.microsoft.com/keys/microsoft.asc
 </code></pre>
 Save and exit the file
 
