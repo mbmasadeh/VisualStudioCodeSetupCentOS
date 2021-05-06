@@ -1,37 +1,36 @@
-## Welcome to GitHub Pages
+## Installing Visual Studio Code in CentOS 7
 
-You can use the [editor on GitHub](https://github.com/mbmasadeh/VisualStudioCodeSetupCentOS/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+The standared installation steps for visual studio code is going well with CentOS 8 and any above releases. However, when you try to do the same steps with CentOS 7, the installation steps will done successfully but the system wont be run. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+##First lets do some VS configurations:
 
-### Markdown
+Importing the Microsoft GPG key
+<pre><code>$ sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc</code></pre>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Create the following repo file to enable the Visual Studio Code repository
+<pre><code>$ sudo nano /etc/yum.repos.d/vscode.repo</code></pre>
 
-```markdown
-Syntax highlighted code block
+Drop the following lines into the new file
 
-# Header 1
-## Header 2
-### Header 3
+[code]
+name=Visual Studio Code
+baseurl=https://packages.microsoft.com/yumrepos/vscode
+enabled=1
+gpgcheck=1
+gpgkey=https://packages.microsoft.com/keys/microsoft.asc
 
-- Bulleted
-- List
+Save and exit the file
 
-1. Numbered
-2. List
+##Second Install VS Code
+Its required to select a specific version of visual studio code thats compatible with CntOS 7 
+<pre><code>$ sudo yum install code-1.52.1-1608137084.el7.x86_64 </code></pre>
 
-**Bold** and _Italic_ and `Code` text
+You have to lock the version since if you upgrade it you cannot use it anymore.
+<pre><code>
+$ sudo yum install yum-plugin-versionlock
+$ sudo yum versionlock code
+</code></pre>
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/mbmasadeh/VisualStudioCodeSetupCentOS/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Thats it ...!
+to run tyhe visual studio code, open a new terminal and hit down this command
+<pre><code>$ code </pre></code>
