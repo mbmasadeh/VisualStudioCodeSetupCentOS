@@ -1,8 +1,9 @@
 ## Installing Visual Studio Code in CentOS 7
 
-The standared installation steps for visual studio code is going well with CentOS 8 and any above releases. However, when you try to do the same steps with CentOS 7, the installation steps will done successfully but the system wont be run. 
+<p>The standared installation steps for visual studio code is going well with CentOS 8 and any above releases. However, when you try to do the same steps with CentOS 7, the installation steps will done successfully but the system wont be run.</p>
+<p>The problem accured due to the latest of Visual Studio Code dosent support CentOS 7, we need to install a previous version of V.S Code to make the life easy with CentOS 7.</p>
 ### prerequisites
-* A CentOS Machine with installed GUI.
+* A CentOS 7 Machine with installed GUI.
 * Putty, of course.
 
 ### First lets do some VS configurations:
